@@ -1,0 +1,5 @@
+services:
+    digip_deploy.application_type.symfony2:
+        class: DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\ApplicationType\Symfony2AppType
+        tags:
+            - { name: digip_deploy.type, slug: 'symfony2' }
