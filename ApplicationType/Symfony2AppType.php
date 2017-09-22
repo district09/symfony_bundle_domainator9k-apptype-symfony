@@ -5,8 +5,8 @@ namespace DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\ApplicationType;
 use DigipolisGent\Domainator9k\CoreBundle\Entity\BaseAppType;
 use DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\Entity\SymfonyTwoSettings;
 use DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\Form\SymfonyTwoSettingsType;
-use Digip\DeployBundle\Entity\Settings;
-use Digip\DeployBundle\Entity\AppEnvironment;
+use DigipolisGent\Domainator9k\CoreBundle\Entity\Settings;
+use DigipolisGent\Domainator9k\CoreBundle\Entity\AppEnvironment;
 
 class Symfony2AppType extends BaseAppType
 {
