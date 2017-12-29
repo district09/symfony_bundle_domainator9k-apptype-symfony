@@ -1,9 +1,0 @@
-name: 'Symfony 2'
-slug: symfony_2
-cron:
-public_folder: 'web'
-database_required: true
-
-additional_config:
-
-directories: []
