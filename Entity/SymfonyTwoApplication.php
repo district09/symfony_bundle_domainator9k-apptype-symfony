@@ -18,7 +18,7 @@ class SymfonyTwoApplication extends AbstractApplication
 
     const TYPE = "SYMFONY_TWO";
 
-    public function getType()
+    public static function getType()
     {
         return self::TYPE;
     }
