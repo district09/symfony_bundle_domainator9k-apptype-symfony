@@ -2,6 +2,7 @@
 
 namespace DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\Entity;
 
+use DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\Form\Type\SymfonyTwoApplicationFormType;
 use DigipolisGent\Domainator9k\CoreBundle\Entity\AbstractApplication;
 use DigipolisGent\Domainator9k\CoreBundle\Entity\TemplateInterface;
 use Doctrine\ORM\Mapping as ORM;
@@ -18,9 +19,20 @@ class SymfonyTwoApplication extends AbstractApplication
 
     const TYPE = "SYMFONY_TWO";
 
-    public static function getType()
+    /**
+     * @return string
+     */
+    public static function getApplicationType() :string
     {
         return self::TYPE;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getFormType(): string
+    {
+        return SymfonyTwoApplicationFormType::class;
     }
 
     /**
@@ -81,6 +93,4 @@ class SymfonyTwoApplication extends AbstractApplication
 
         return $templateReplacements;
     }
-
-
 }
