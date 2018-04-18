@@ -22,7 +22,7 @@ class SymfonyTwoApplication extends AbstractApplication
     /**
      * @return string
      */
-    public static function getApplicationType() :string
+    public function getApplicationType() :string
     {
         return self::TYPE;
     }
