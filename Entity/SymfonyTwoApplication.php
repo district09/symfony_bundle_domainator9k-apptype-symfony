@@ -13,6 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @package DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\Entity
  *
  * @ORM\Entity()
+ * @ORM\Table(name="symfony_two_application")
  */
 class SymfonyTwoApplication extends AbstractApplication
 {
