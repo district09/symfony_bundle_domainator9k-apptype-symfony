@@ -54,7 +54,7 @@ class SymfonyTwoApplication extends AbstractApplication
     /**
      * @return string
      */
-    public function getLocale()
+    public function getLocale(): ?string
     {
         return $this->locale;
     }
@@ -70,7 +70,7 @@ class SymfonyTwoApplication extends AbstractApplication
     /**
      * @return string
      */
-    public function getSecret()
+    public function getSecret(): ?string
     {
         return $this->secret;
     }
@@ -83,15 +83,4 @@ class SymfonyTwoApplication extends AbstractApplication
         $this->secret = $secret;
     }
 
-    /**
-     * @return array
-     */
-    public static function getTemplateReplacements(): array
-    {
-        $templateReplacements = parent::getTemplateReplacements();
-        $templateReplacements['locale()'] = 'getLocale()';
-        $templateReplacements['secret()'] = 'getSecret()';
-
-        return $templateReplacements;
-    }
 }
