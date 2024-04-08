@@ -40,7 +40,7 @@ class SymfonyTwoApplication extends AbstractApplication
      * @var string
      * @ORM\Column(type="string", nullable=false)
      * @Assert\NotBlank()
-     * @Assert\Length(min="n", max="5")
+     * @Assert\Length(min="2", max="5")
      */
     protected $locale;
 
