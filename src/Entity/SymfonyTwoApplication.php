@@ -11,10 +11,9 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Class SymfonyTwoApplication
  * @package DigipolisGent\Domainator9k\AppTypes\SymfonyTwoBundle\Entity
- *
- * @ORM\Entity()
- * @ORM\Table(name="symfony_two_application")
  */
+#[ORM\Table(name: 'symfony_two_application')]
+#[ORM\Entity]
 class SymfonyTwoApplication extends AbstractApplication
 {
 
@@ -38,17 +37,17 @@ class SymfonyTwoApplication extends AbstractApplication
 
     /**
      * @var string
-     * @ORM\Column(type="string", nullable=false)
-     * @Assert\NotBlank()
-     * @Assert\Length(min="2", max="5")
      */
+    #[ORM\Column(type: 'string', nullable: false)]
+    #[Assert\NotBlank]
+    #[Assert\Length(min: 2, max: 5)]
     protected $locale;
 
     /**
      * @var string
-     * @ORM\Column(type="string", nullable=false)
-     * @Assert\NotBlank()
      */
+    #[ORM\Column(type: 'string', nullable: false)]
+    #[Assert\NotBlank]
     protected $secret;
 
     /**
